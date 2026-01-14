@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu</title>
+    <!-- Cada vez que un usuario entre o se refresque la pestaña, cambiaran los estados de los numeros de los 2 div -->
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main class="calculator">
+        <!-- Numeros aleatorios -->
+        <h1 class="calculator__title">Numeros Aleatorios</h1>
+         <section class="calculator__numbers">
+            <span class="calculator__number" id="numero1">0</span>
+            <span class="calculator__number" id="numero2">0</span>
+         </section>
+
+         <!-- Button de numeros aleatorio -->
+         <button class="calculator__button calculator__button--random" id="btnAleatorio">Numeros aleatorios</button>
+        <!-- Resultados de las operaciones arriba de los btn de las operaciones -->
+        <section class="calculator__results" id="resultados">
+            <!-- Zona resultado -->
+             <section class="calculator__results-zone">
+                <h2 class="calculator__results-title">Resultados</h2>
+                <p class="calculator__result" id="resultadoSuma">Suma:</p>
+                <p class="calculator__result" id="resultadoResta">Resta: </p>
+                <p class="calculator__result" id="resultadoMultiplicacion">Multiplicacion: </p>
+                <p class="calculator__result" id="resultadoDivision">Division: </p>
+             </section>
+            <!-- Zona botones operaciones -->
+            <div class="operation__container">
+                
+                    <button class="calculator__button calculator__button--sum" id="suma">Suma</button>
+                    <button class="calculator__button calculator__button--rest" id="resta">Resta</button>
+                
+                
+                    <button class="calculator__button calculator__button--multiply" id="multiplicacion">Multiplicacion</button>
+                    <button class="calculator__button calculator__button--divide" id="division">Division</button>
+            </div>
+
+        </section>
+
+    <script type="module" src="js/index.js"></script>
+    </main>
+</body>
+</html>
