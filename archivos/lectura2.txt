@@ -1,2 +1,0 @@
-Este es un nuevo archivo creado con Node.js,
-y este es su contenido escrito desde el script.

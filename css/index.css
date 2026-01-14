@@ -41,8 +41,8 @@ body {
     margin: 5px;
     font-size: 1rem;
     border: none;
+    background-color: gray;
     border-radius: 5px;
-    background-color: #007BFF;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -73,12 +73,15 @@ body {
     gap: 10px;
     margin-bottom: 15px;
 }
-.calculator__results-title {}
-.calculator__result {}
-.calculator__buttons {}
+.calculator__results-title {
+    font-weight: bold;
+}
+.calculator__result {
+    font-size: 1.1rem;
 
+}
+.calculator__buttons {
+    display: flex;
+    justify-content: center;
+}
 
-.calculator__button--sum {}
-.calculator__button--rest {}
-.calculator__button--multiply {}
-.calculator__button--divide {}
