@@ -63,4 +63,3 @@ division.addEventListener('click', () => {
 });
 // generar numeros aleatorios al cargar la pagina
 generarNumerosAleatorios();
-
