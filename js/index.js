@@ -1,6 +1,6 @@
 // importar de la libreria de operaciones aritmeticas
 // seleccionar los elementos del DOM
-import { sumar, restar, multiplicar, dividir } from './operaciones-aritmeticas.js';
+import Operaciones from './operaciones-aritmeticas.js';
 const numero1 = document.getElementById('numero1');
 const numero2 = document.getElementById('numero2');
 const btnAleatorio = document.getElementById('btnAleatorio');
@@ -38,28 +38,28 @@ btnAleatorio.addEventListener('click', generarNumerosAleatorios);
 suma.addEventListener('click', () => {
     const num1 = parseInt(numero1.textContent);
     const num2 = parseInt(numero2.textContent);
-    resultadoSuma.textContent = 'Suma: ' + sumar(num1, num2);
+    resultadoSuma.textContent = 'Suma: ' + Operaciones.sumar(num1, num2);
 });
 
 // evento de resta
 resta.addEventListener('click', () => {
     const num1 = parseInt(numero1.textContent);
     const num2 = parseInt(numero2.textContent);
-    resultadoResta.textContent = 'Resta: ' + restar(num1, num2);
+    resultadoResta.textContent = 'Resta: ' + Operaciones.restar(num1, num2);
 });
 
 // evento de multiplicacion
 multiplicacion.addEventListener('click', () => {
     const num1 = parseInt(numero1.textContent);
     const num2 = parseInt(numero2.textContent);
-    resultadoMultiplicacion.textContent = 'Multiplicacion: ' + multiplicar(num1, num2);
+    resultadoMultiplicacion.textContent = 'Multiplicacion: ' + Operaciones.multiplicar(num1, num2);
 });
 
 // evento de division
 division.addEventListener('click', () => {
     const num1 = parseInt(numero1.textContent);
     const num2 = parseInt(numero2.textContent);
-    resultadoDivision.textContent = 'Division: ' + dividir(num1, num2);
+    resultadoDivision.textContent = 'Division: ' + Operaciones.dividir(num1, num2);
 });
 // generar numeros aleatorios al cargar la pagina
 generarNumerosAleatorios();
